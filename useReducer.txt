@@ -1,0 +1,6 @@
+Is another React hook that will help use with state management (like useState with more capabilities) 
+
+Sometimes you have more complex state - for example if it got multiple states, multiple ways of changing it ir dependencies to other states.
+then useState() often becomes hard or error-prone to use - it's easy to write bad, inefficient or buggy code in such scenarios.
+
+useReducer can be uses as a replacement for useState() if you need more powerful state management.

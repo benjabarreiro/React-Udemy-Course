@@ -1,0 +1,19 @@
+useEffect(() => {
+    console.log("Effect running");
+  }); // It runs for every time this component function runs
+
+  useEffect(() => {}, []) // It runs once
+
+  useEffect(() => {}, [enteredPassword]) // it runs once at the beginning and for every dependency changes
+
+  useEffect(() => {
+    const identifier = setTimeout(() => {
+      setFormIsValid(
+        enteredEmail.value.includes("@") && enteredPassword.trim().length > 6
+      );
+    }, 500);
+    return () => {
+      clearTimeout(identifier); // clearTimeout is built into the browser. We clear the last timer before starting a new one.
+    }; // --> clean up function. The idea is to run one http request instead of many.
+  }, [/* setFormIsValid,  */ enteredEmail, enteredPassword]); // setState can be omitted here because by default they are ensured by React to never changed
+  //Also, we don't have to add apis functions like fetch, and also local storage.

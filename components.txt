@@ -1,0 +1,9 @@
+all UI are made up of components
+
+components are reusable building blocks for the UI.
+They allow us separate our concerns, meaning keeping our code base small and manageable.
+
+
+all components are a combination of html, css and js.
+
+declerative approach: you will not tell React that some html element should be created and inserted. Here you define the desired state and let React decide which one to insert.

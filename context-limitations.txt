@@ -1,0 +1,5 @@
+Context Limitations
+
+- not optmized for high frecuency changes (example: state changes every second)
+
+- shuold not be used to replace ALL component comunication via props.

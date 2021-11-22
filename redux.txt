@@ -1,0 +1,24 @@
+what is redux?
+
+It's a state management system for cross-component or app-wide state
+
+helps to manage state and data across several components.
+
+three types of states:
+-local state: state that belongs to a single component (useState, useReducer)
+- cross-component state:  state that affects multiple components (requires props chains / props drilling to do this with useState and useReducer)
+- app-wide state: state that affects the entire app (requires props chains too)
+
+we learned context to avoid props chains in cross-component and app-wide
+
+redux does the same as context
+
+context disadvantages:
+- complex setup/management of state.
+- performance: not good for high frequency changes
+
+core redux concepts:
+- one central data (state) store
+- we get data to components via suscription
+- components never directly manipulate data in the store. for this we use Reducer function (it mutates store data) (!== useReducer()) (reducer functions are a general concept)
+- components dispatch (trigger) actions and redux forwards it to the reducer

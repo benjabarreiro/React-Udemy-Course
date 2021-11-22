@@ -1,0 +1,6 @@
+app
+ -expenses: data/state is needed here
+ -newExpense: data/state is generated here
+
+we use App to connect this data/state needed because it is the closest involved component.
+we do this by lifting the state up: we use props to call functions (created in parent) and when executing the function, give it a value which is a parameter in the parent. and so the parent component has access through this parameter to a value in a child component.

@@ -1,0 +1,5 @@
+using refs is uncontrolled because it is not controlled by React, you access values of the DOM without the control of React.
+
+Normally, this scenario is related to inputs.
+
+The previous approach with state on the input was a controlled approach because internal state was controlled by React.

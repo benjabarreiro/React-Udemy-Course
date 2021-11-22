@@ -1,0 +1,9 @@
+where should our logic go?
+
+1) synchronous, side-effect code (i.e. data transformation) (when working with redux)
+--> Prefer Reducers
+--> Avoid Action Creators or Components
+
+2) Async code or code with side-effects
+--> Prefer Action Creators or Components
+--> Never use Reducers

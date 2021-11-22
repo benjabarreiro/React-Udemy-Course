@@ -1,0 +1,5 @@
+What are custom hooks?
+
+outsource stateful logic into re-usable functions
+
+Unlike regular functions, custom hooks can use other react hooks and react state.
